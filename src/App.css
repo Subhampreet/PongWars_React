@@ -19,6 +19,7 @@ body {
   width: min(70vh, 80%);
   max-width: 600px;
   height: 100%;
+  margin: auto;
 }
 
 canvas {
