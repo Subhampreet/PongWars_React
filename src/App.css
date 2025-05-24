@@ -9,7 +9,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #172b36 0%, #d9e8e3 100%);
+  /* UPDATED BACKGROUND FOR FIRE VS ICE THEME */
+  background: linear-gradient(to bottom, #1A2A40 0%, #FF6B6B 100%); 
+  /* background: linear-gradient(to bottom, #2C3E50 0%, #FF8C00 100%); Deep Ocean to Burning Orange */
+  /* OR blend both: */
+  /* background: linear-gradient(to bottom, #2C3E50 0%, #A7D9FF 50%, #FF8C00 100%); Ocean -> Ice -> Fire */
+
+  /* You might also want to adjust score and link colors to ensure good contrast */
+  /* This depends on which background gradient you choose and where the text sits */
+  /* For example, if the top is dark, score might need to be light, and vice versa. */
+  /* color: white; /* Could make text white if background is predominantly dark */
 }
 
 #container {
@@ -36,7 +45,8 @@ canvas {
   margin-top: 30px;
   font-size: 16px;
   padding-left: 20px;
-  color: #172b36;
+  /* Adjust color for contrast against the new background */
+  color: #F0F8FF; /* Arctic White for score to stand out against dark top */
 }
 
 #made {
@@ -46,8 +56,11 @@ canvas {
   margin-top: auto;
   margin-bottom: 20px;
   font-size: 10px;
+  /* Adjust color for contrast against the new background */
+  color: #F0F8FF; /* Arctic White for 'made by' text */
 }
 
 #made a {
-  color: #172b36;
+  /* Adjust link color to match theme */
+  color: #A7D9FF; /* Ice Blue for links */
 }
