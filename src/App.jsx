@@ -5,8 +5,6 @@ import './App.css';
 import PongWars from './components/PongWars';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (<>
     <PongWars />
   </>);
